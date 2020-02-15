@@ -1,0 +1,29 @@
+dispatch=-=> action==> craetor===> reducer
+
+reducer has currState and action as parameter
+
+
+Container Vs Presentation
+
+counter(container)props--->counter(presenation)child
+knows about redux           -----------?does not knw redux(function)
+so it passes dispatcher and all through props              -----------?
+
+
+coounter(presenation)-->connect()---->counter(container)
+
+
+connect(null,null)===>presentation counter
+
+
+Thunk ----> to handle side effects --> it is a middle ware
+npm install redux-thunk
+
+when we dispatch the action from the view --> here actions are objects --> by using thunk we can dispatch action as function too
+
+
+dispatch and side effect action are mentioned in side th efunction
+function()
+{
+side effects
+dispatch
